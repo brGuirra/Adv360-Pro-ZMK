@@ -10,7 +10,7 @@ The source layout reviewed is [brGuirra/zmk-config-custom](https://github.com/br
 | --- | --- | --- |
 | 34-key base, symbol, number, navigation, function, mouse, and system layers | Yes | The target layout is intentionally 34 logical keys for compatibility with the user's smaller keyboard. Define all 76 physical positions in every `config/adv360.keymap` layer, binding the 42 positions outside the logical layout to `&none`. Do not remove bindings or use the old 34-key transform. |
 | Home-row mods and long-press navigation keys | Yes | Define local `zmk,behavior-hold-tap` behaviors. The pinned fork supports `balanced`, `tap-preferred`, `quick-tap-ms`, `require-prior-idle-ms`, `hold-trigger-key-positions`, and `hold-trigger-on-release`. The existing `homerow_mods` definition is a starting point. |
-| Positional combos for symbols and shortcuts | Yes | Add a `combos` node and use the matrix positions in `assets/key-positions.md`. Increase the existing combo capacity settings only if the build requires it. |
+| Positional combos for symbols and shortcuts | Technically supported, intentionally excluded | The target layout does not use combos because they are difficult to actuate on the Advantage 360. Use the dedicated momentary Symbol layer for coding symbols instead. |
 | Macros, including paired punctuation and OS shortcuts | Yes | Define reusable `zmk,behavior-macro` nodes in `config/macros.dtsi`. The current config already has paired punctuation, Windows, macOS, and mouse-click macros. |
 | Sticky modifiers | Yes | Use the built-in sticky-key behavior for ordinary one-shot modifiers. |
 | Caps Word | Yes | Use the built-in `&caps_word`. Its continuation list can be customized, but it does not include urob's modifier-sensitive extensions. |
@@ -38,7 +38,15 @@ The source layout reviewed is [brGuirra/zmk-config-custom](https://github.com/br
 
 ## Recommended Migration Boundary
 
-Build the new layout only from the **Directly Implementable** set first: the 34-key logical placement, layers, home-row mods, combos, macros, navigation, mouse, and system controls. This preserves the Kinesis-supported firmware framework and covers the majority of the prior layout. Every layer must still contain the complete 76-position matrix, using `&none` for the 42 intentionally unused positions.
+Build the new layout only from the **Directly Implementable** set first: the 34-key logical placement, home-row mods, combo-free layers, navigation, and system controls. This preserves the Kinesis-supported firmware framework and covers the majority of the prior layout. Every layer must still contain the complete 76-position matrix, using `&none` for the 42 intentionally unused positions.
+
+The implemented layer access model is intentionally combo-free:
+
+- Hold left outer thumb: Navigation.
+- Hold left inner thumb: Symbol.
+- Hold right inner thumb: Number.
+- Tap right outer thumb: Sticky Shift; hold it for ordinary Shift.
+- Hold Symbol and Number together: Utility, containing F-keys, media, Bluetooth, bootloader, and lighting controls.
 
 After that is stable on hardware, choose between these two paths for the remaining smart behaviors:
 
