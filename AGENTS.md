@@ -9,6 +9,7 @@ Use this repository to customize the keyboard's ZMK configuration directly. Do n
 ## Primary Customization Points
 
 - Edit `config/adv360.keymap` for key bindings, layers, custom behaviors, and includes.
+- Use a 34-key logical layout to maintain compatibility with the user's smaller keyboard. The remaining physical Advantage 360 positions must be explicitly bound to `&none`; they are not part of the layout.
 - Add reusable custom behaviors or macros in `config/macros.dtsi` or a focused included `.dtsi` file.
 - Keep `config/adv360_left.keymap` and `config/adv360_right.keymap` as thin entry points that include the shared keymap unless a real per-half difference is required.
 - Use `config/boards/arm/adv360/` only for hardware, DeviceTree, pin, or Kconfig changes. Do not alter board definitions for ordinary keymap changes.
@@ -23,7 +24,7 @@ Use this repository to customize the keyboard's ZMK configuration directly. Do n
 
 ## Change Guidelines
 
-- Preserve the physical key order and number of bindings in every layer. A shifted or missing binding changes the keyboard matrix mapping and can produce an incorrect keymap.
+- Preserve the physical key order and 76 bindings in every layer. The active logical layout is 34 keys; preserve `&none` bindings for every unused physical position. A shifted or missing binding changes the keyboard matrix mapping and can produce an incorrect keymap.
 - Use documented ZMK Devicetree syntax and keycode/behavior names compatible with the revision pinned in `config/west.yml`.
 - Keep custom changes minimal and localized to the keymap or behavior definitions.
 - Preserve Bluetooth profile selection and bootloader bindings unless their behavior is intentionally being changed; they are needed to pair devices and flash recovery firmware.
