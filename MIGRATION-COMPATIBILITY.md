@@ -47,6 +47,7 @@ The implemented layer access model is intentionally combo-free:
 - Tap right inner thumb: one-shot Number for the next key; hold it for momentary Number; tap then hold for persistent Number; press it while persistent Number is active to return to Base.
 - Enter is on the Navigation layer.
 - Tap right outer thumb: Sticky Shift; hold it for ordinary Shift.
+- Hold Space and tap the right outer thumb: cancel active layers, Sticky Shift, and pending one-shot Symbol or Number.
 - Hold Symbol and Number together: Utility, containing F-keys, media, Bluetooth, bootloader, and lighting controls.
 
 After that is stable on hardware, choose between these two paths for the remaining smart behaviors:
