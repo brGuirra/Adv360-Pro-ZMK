@@ -18,8 +18,9 @@ Use this repository to customize the keyboard's ZMK configuration directly. Do n
 
 ## Build And Flash Workflow
 
-- Build both halves locally with `make`; use `make left` only when the right-side binary is not needed.
-- For a completed firmware change, commit the source changes before building. This ensures the generated firmware filename and embedded version macro contain the final commit hash.
+- For every completed layout change, including new features and fixes, commit the source changes and then build both halves locally with `make` without waiting for a separate request. Use `make left` only when the right-side binary is not needed.
+- Commit before building a layout change. This ensures the generated firmware filename and embedded version macro contain the final commit hash.
+- Do not build firmware for changes unrelated to the layout or changes that do not require a firmware artifact. Such commits do not need a corresponding firmware version.
 - Build output is written to `firmware/` as timestamped `.uf2` files.
 - Flash the left and right `.uf2` files to their matching keyboard halves while each is in bootloader mode.
 - Prefer the legacy/non-Clique build path for GitHub Actions and local workflows. Do not enable ZMK Studio/Clique solely for configuration editing.

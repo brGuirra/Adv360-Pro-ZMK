@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="640" viewBox="0 0 1200 640" role="img" aria-labelledby="title description">
+  <title id="title">Advantage 360 34-key layout</title>
+  <desc id="description">Split keyboard Base layer with Space and Enter on the left thumb cluster, and Number Backspace and Sticky Shift on the right thumb cluster.</desc>
+  <style>
+    .background { fill: #101827; }
+    .title { fill: #f8fafc; font: 700 30px system-ui, sans-serif; }
+    .subtitle { fill: #94a3b8; font: 16px system-ui, sans-serif; }
+    .half { fill: #172235; stroke: #334155; stroke-width: 2; }
+    .key { fill: #24354d; stroke: #4c6788; stroke-width: 2; }
+    .thumb { fill: #164e63; stroke: #22d3ee; stroke-width: 2; }
+    .mod { fill: #4c1d95; stroke: #a78bfa; stroke-width: 2; }
+    .label { fill: #f8fafc; font: 700 18px system-ui, sans-serif; text-anchor: middle; dominant-baseline: middle; }
+    .small { fill: #e0f2fe; font: 12px system-ui, sans-serif; text-anchor: middle; dominant-baseline: middle; }
+    .caption { fill: #cbd5e1; font: 14px system-ui, sans-serif; text-anchor: middle; }
+    .legend { fill: #94a3b8; font: 13px system-ui, sans-serif; }
+  </style>
+  <rect class="background" width="1200" height="640" rx="24" />
+  <text class="title" x="600" y="54" text-anchor="middle">Advantage 360 Pro: 34-Key Base Layer</text>
+  <text class="subtitle" x="600" y="82" text-anchor="middle">Hold Space for Nav. Hold Enter for Symbol. Hold Backspace for Number.</text>
+
+  <path class="half" d="M55 128 Q55 108 75 108 H495 Q530 108 530 143 V465 Q530 495 500 495 H75 Q55 495 55 475 Z" />
+  <path class="half" d="M1145 128 Q1145 108 1125 108 H705 Q670 108 670 143 V465 Q670 495 700 495 H1125 Q1145 495 1145 475 Z" />
+
+  <!-- Left alpha cluster -->
+  <g>
+    <rect class="key" x="92" y="150" width="62" height="58" rx="10"/><text class="label" x="123" y="179">Q</text>
+    <rect class="key" x="164" y="150" width="62" height="58" rx="10"/><text class="label" x="195" y="179">W</text>
+    <rect class="key" x="236" y="150" width="62" height="58" rx="10"/><text class="label" x="267" y="179">E</text>
+    <rect class="key" x="308" y="150" width="62" height="58" rx="10"/><text class="label" x="339" y="179">R</text>
+    <rect class="key" x="380" y="150" width="62" height="58" rx="10"/><text class="label" x="411" y="179">T</text>
+
+    <rect class="mod" x="78" y="220" width="70" height="58" rx="10"/><text class="label" x="113" y="243">A</text><text class="small" x="113" y="263">GUI</text>
+    <rect class="mod" x="158" y="220" width="70" height="58" rx="10"/><text class="label" x="193" y="243">S</text><text class="small" x="193" y="263">ALT</text>
+    <rect class="mod" x="238" y="220" width="70" height="58" rx="10"/><text class="label" x="273" y="243">D</text><text class="small" x="273" y="263">CTRL</text>
+    <rect class="mod" x="318" y="220" width="70" height="58" rx="10"/><text class="label" x="353" y="243">F</text><text class="small" x="353" y="263">SHIFT</text>
+    <rect class="key" x="398" y="220" width="62" height="58" rx="10"/><text class="label" x="429" y="249">G</text>
+
+    <rect class="key" x="92" y="290" width="62" height="58" rx="10"/><text class="label" x="123" y="319">Z</text>
+    <rect class="key" x="164" y="290" width="62" height="58" rx="10"/><text class="label" x="195" y="319">X</text>
+    <rect class="key" x="236" y="290" width="62" height="58" rx="10"/><text class="label" x="267" y="319">C</text>
+    <rect class="key" x="308" y="290" width="62" height="58" rx="10"/><text class="label" x="339" y="319">V</text>
+    <rect class="key" x="380" y="290" width="62" height="58" rx="10"/><text class="label" x="411" y="319">B</text>
+  </g>
+
+  <!-- Right alpha cluster -->
+  <g>
+    <rect class="key" x="758" y="150" width="62" height="58" rx="10"/><text class="label" x="789" y="179">Y</text>
+    <rect class="key" x="830" y="150" width="62" height="58" rx="10"/><text class="label" x="861" y="179">U</text>
+    <rect class="key" x="902" y="150" width="62" height="58" rx="10"/><text class="label" x="933" y="179">I</text>
+    <rect class="key" x="974" y="150" width="62" height="58" rx="10"/><text class="label" x="1005" y="179">O</text>
+    <rect class="key" x="1046" y="150" width="62" height="58" rx="10"/><text class="label" x="1077" y="179">P</text>
+
+    <rect class="key" x="740" y="220" width="62" height="58" rx="10"/><text class="label" x="771" y="249">H</text>
+    <rect class="mod" x="812" y="220" width="70" height="58" rx="10"/><text class="label" x="847" y="243">J</text><text class="small" x="847" y="263">SHIFT</text>
+    <rect class="mod" x="892" y="220" width="70" height="58" rx="10"/><text class="label" x="927" y="243">K</text><text class="small" x="927" y="263">CTRL</text>
+    <rect class="mod" x="972" y="220" width="70" height="58" rx="10"/><text class="label" x="1007" y="243">L</text><text class="small" x="1007" y="263">ALT</text>
+    <rect class="mod" x="1052" y="220" width="70" height="58" rx="10"/><text class="label" x="1087" y="243">'</text><text class="small" x="1087" y="263">GUI</text>
+
+    <rect class="key" x="740" y="290" width="62" height="58" rx="10"/><text class="label" x="771" y="319">N</text>
+    <rect class="key" x="812" y="290" width="62" height="58" rx="10"/><text class="label" x="843" y="319">M</text>
+    <rect class="key" x="884" y="290" width="62" height="58" rx="10"/><text class="label" x="915" y="319">,</text>
+    <rect class="key" x="956" y="290" width="62" height="58" rx="10"/><text class="label" x="987" y="319">.</text>
+    <rect class="key" x="1028" y="290" width="62" height="58" rx="10"/><text class="label" x="1059" y="319">/</text>
+  </g>
+
+  <!-- Thumb clusters -->
+  <g>
+    <rect class="thumb" x="288" y="385" width="112" height="70" rx="14"/><text class="label" x="344" y="408">SPACE</text><text class="small" x="344" y="431">hold: NAV</text>
+    <rect class="thumb" x="410" y="365" width="112" height="70" rx="14"/><text class="label" x="466" y="388">ENTER</text><text class="small" x="466" y="411">hold: SYMBOL</text>
+    <rect class="thumb" x="678" y="365" width="112" height="70" rx="14"/><text class="label" x="734" y="388">BSPC</text><text class="small" x="734" y="411">hold: NUMBER</text>
+    <rect class="thumb" x="800" y="385" width="112" height="70" rx="14"/><text class="label" x="856" y="408">SHIFT</text><text class="small" x="856" y="431">tap: sticky</text>
+  </g>
+
+  <text class="caption" x="405" y="530">LEFT HALF</text>
+  <text class="caption" x="795" y="530">RIGHT HALF</text>
+  <circle cx="89" cy="580" r="7" fill="#24354d"/><text class="legend" x="103" y="585">regular key</text>
+  <circle cx="255" cy="580" r="7" fill="#4c1d95"/><text class="legend" x="269" y="585">home-row modifier</text>
+  <circle cx="472" cy="580" r="7" fill="#164e63"/><text class="legend" x="486" y="585">thumb hold-tap</text>
+  <text class="legend" x="600" y="616" text-anchor="middle">Utility activates while Symbol and Number are both held.</text>
+</svg>
