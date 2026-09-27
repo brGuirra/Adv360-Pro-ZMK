@@ -17,6 +17,8 @@ This is a reference for the active 34 keys in `config/adv360.keymap`. All other 
 
 ## Navigation
 
+![Navigation-layer visual layout](assets/layout-navigation.svg)
+
 | Left | Keys | Right | Keys |
 | --- | --- | --- | --- |
 | Top | - - - - - | Top | Home Backspace Enter Delete End |
@@ -25,6 +27,8 @@ This is a reference for the active 34 keys in `config/adv360.keymap`. All other 
 | Thumbs | Trans, Trans | Thumbs | Trans, Trans |
 
 ## Symbol
+
+![Symbol-layer visual layout](assets/layout-symbol.svg)
 
 | Left | Keys | Right | Keys |
 | --- | --- | --- | --- |
@@ -35,6 +39,8 @@ This is a reference for the active 34 keys in `config/adv360.keymap`. All other 
 
 ## Number
 
+![Number-layer visual layout](assets/layout-number.svg)
+
 | Left | Keys | Right | Keys |
 | --- | --- | --- | --- |
 | Top | Trans 7 8 9 Trans | Top | [ ] / * % |
@@ -43,6 +49,8 @@ This is a reference for the active 34 keys in `config/adv360.keymap`. All other 
 | Thumbs | Trans, Trans | Thumbs | Base/Cancel, Trans |
 
 ## Utility
+
+![Utility-layer visual layout](assets/layout-utility.svg)
 
 | Left | Keys | Right | Keys |
 | --- | --- | --- | --- |
