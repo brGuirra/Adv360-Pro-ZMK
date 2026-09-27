@@ -22,8 +22,8 @@ The source layout reviewed is [brGuirra/zmk-config-custom](https://github.com/br
 
 | Prior urob capability | Why an exact port is unavailable | Native replacement |
 | --- | --- | --- |
-| Smart Num: tap Num Word, double-tap persistent Num, hold momentary Num | The old `&num_word` behavior is not in the pinned firmware. | Use a momentary Num layer plus a separate toggle key. A single smart key can cover tap-or-hold with hold-tap, but cannot reproduce all three actions exactly without a tap-dance-like behavior. |
-| One-shot sticky layer | The pinned behavior set includes sticky keys but no sticky-layer behavior. | Use a momentary or toggle layer, or reserve a thumb key for the one-shot action needed on that layer. |
+| Smart Num: tap Num Word, double-tap persistent Num, hold momentary Num | The old `&num_word` behavior is not in the pinned firmware. | Compose sticky-key, hold-tap, tap-dance, toggle-layer, and to-layer behaviors for one-shot, momentary, persistent, and cancelable Number access. |
+| One-shot sticky layer | The pinned behavior set has no native sticky-layer behavior. | Wrap `&mo` in a custom sticky-key behavior. It can provide a one-shot layer with a configurable timeout. |
 | Smart Mouse: a mouse layer that automatically exits when a non-mouse key is pressed | It depends on urob's `zmk,behavior-tri-state`, which is absent. | Use a normal momentary mouse layer or a dedicated toggle key. It will not auto-cancel on the next ordinary key. |
 | Alt-Tab swapper that retains Alt while consecutive tab presses continue | It depends on the same absent tri-state behavior. | Use a normal `Alt+Tab` macro or a momentary navigation layer with explicit Alt and Tab. |
 | Unicode Greek/German layer activated with a sticky shifted-layer behavior | The prior config generates behaviors with `zmk-nodefree-config` and relies on mod-morph support not present in this fork. | Use direct host shortcut macros where the OS/application has a stable input method, or a regular Unicode layer with individually defined macros. This remains host-layout and OS dependent. |
@@ -44,7 +44,7 @@ The implemented layer access model is intentionally combo-free:
 
 - Hold the legacy Space thumb: Navigation; tap it for Space.
 - Hold the legacy Enter thumb: Symbol; tap it for Enter.
-- Hold right inner thumb: Number.
+- Tap right inner thumb: one-shot Number for the next key; hold it for momentary Number; tap then hold for persistent Number; press it while persistent Number is active to return to Base.
 - Tap right outer thumb: Sticky Shift; hold it for ordinary Shift.
 - Hold Symbol and Number together: Utility, containing F-keys, media, Bluetooth, bootloader, and lighting controls.
 
