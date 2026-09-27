@@ -2,7 +2,7 @@
 
 This is a reference for the active 34 keys in `config/adv360.keymap`. All other physical Advantage 360 positions are disabled.
 
-`Nav` is held with Space and `Symbol` is held with Enter. Tap the Number thumb once for a one-shot Number layer, hold it for momentary Number, or tap then hold it for 250 ms to lock Number. Press the Number thumb while Number is locked to return to Base. Holding Symbol and Number together activates Utility. `-` is an unbound key and `Trans` uses its Base-layer binding.
+`Nav` is held with Space. Tap either Symbol or Number once for a one-shot layer, hold it for momentary access, or tap then hold it for 250 ms to lock the layer. Press its thumb while a layer is locked to return to Base. Enter is available on the Navigation layer. Holding Symbol and Number together activates Utility. `-` is an unbound key and `Trans` uses its Base-layer binding.
 
 ![Base-layer visual layout](assets/layout.svg)
 
@@ -13,7 +13,7 @@ This is a reference for the active 34 keys in `config/adv360.keymap`. All other 
 | Top | Q W E R T | Top | Y U I O P |
 | Home | GUI/A Alt/S Ctrl/D Shift/F G | Home | H Shift/J Ctrl/K Alt/L GUI/' |
 | Bottom | Z X C V B | Bottom | N M , . / |
-| Thumbs | Space/Nav (65), Enter/Symbol (66) | Thumbs | Number (69), Shift (70) |
+| Thumbs | Space/Nav (65), Symbol (66) | Thumbs | Number (69), Shift (70) |
 
 ## Navigation
 
@@ -35,7 +35,7 @@ This is a reference for the active 34 keys in `config/adv360.keymap`. All other 
 | Top | Grave < [ { ( | Top | ) } ] > ^ |
 | Home | ! @ # $ % | Home | & - + = \| |
 | Bottom | ~ \\ / * _ | Bottom | ? : ; ' " |
-| Thumbs | Trans, Trans | Thumbs | Trans, Trans |
+| Thumbs | Trans, Base/Cancel | Thumbs | Trans, Trans |
 
 ## Number
 

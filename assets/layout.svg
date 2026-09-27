@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="640" viewBox="0 0 1200 640" role="img" aria-labelledby="title description">
   <title id="title">Advantage 360 34-key layout</title>
-  <desc id="description">Split keyboard Base layer with Space and Enter on the left thumb cluster, and one-shot, momentary, or persistent Number access plus Sticky Shift on the right thumb cluster.</desc>
+  <desc id="description">Split keyboard Base layer with Space and one-shot, momentary, or persistent Symbol access on the left thumb cluster, and the same Number access plus Sticky Shift on the right thumb cluster.</desc>
   <style>
     .background { fill: #101827; }
     .title { fill: #f8fafc; font: 700 30px system-ui, sans-serif; }
@@ -16,7 +16,7 @@
   </style>
   <rect class="background" width="1200" height="640" rx="24" />
   <text class="title" x="600" y="54" text-anchor="middle">Advantage 360 Pro: 34-Key Base Layer</text>
-  <text class="subtitle" x="600" y="82" text-anchor="middle">Hold Space for Nav. Hold Enter for Symbol. Tap or hold Number for one-shot, momentary, or locked Number.</text>
+  <text class="subtitle" x="600" y="82" text-anchor="middle">Hold Space for Nav. Tap or hold Symbol and Number for one-shot, momentary, or locked layers.</text>
 
   <path class="half" d="M55 128 Q55 108 75 108 H495 Q530 108 530 143 V465 Q530 495 500 495 H75 Q55 495 55 475 Z" />
   <path class="half" d="M1145 128 Q1145 108 1125 108 H705 Q670 108 670 143 V465 Q670 495 700 495 H1125 Q1145 495 1145 475 Z" />
@@ -66,7 +66,7 @@
   <!-- Thumb clusters -->
   <g>
     <rect class="thumb" x="288" y="385" width="112" height="70" rx="14"/><text class="label" x="344" y="408">SPACE</text><text class="small" x="344" y="431">hold: NAV</text>
-    <rect class="thumb" x="410" y="365" width="112" height="70" rx="14"/><text class="label" x="466" y="388">ENTER</text><text class="small" x="466" y="411">hold: SYMBOL</text>
+    <rect class="thumb" x="410" y="365" width="112" height="70" rx="14"/><text class="label" x="466" y="388">SYMBOL</text><text class="small" x="466" y="411">tap: one-shot</text>
     <rect class="thumb" x="678" y="365" width="112" height="70" rx="14"/><text class="label" x="734" y="388">NUMBER</text><text class="small" x="734" y="411">tap: one-shot</text>
     <rect class="thumb" x="800" y="385" width="112" height="70" rx="14"/><text class="label" x="856" y="408">SHIFT</text><text class="small" x="856" y="431">tap: sticky</text>
   </g>

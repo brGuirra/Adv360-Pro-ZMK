@@ -90,6 +90,42 @@
             quick-tap-ms = <175>;
             bindings = <&mo>, <&num_dance>;
         };
+
+        sym_sticky: one_shot_symbol {
+            compatible = "zmk,behavior-sticky-key";
+            label = "ONE_SHOT_SYMBOL";
+            #binding-cells = <1>;
+            bindings = <&mo>;
+            release-after-ms = <1000>;
+            quick-release;
+        };
+
+        sym_lock: symbol_lock_hold {
+            compatible = "zmk,behavior-hold-tap";
+            label = "SYMBOL_LOCK_HOLD";
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <250>;
+            bindings = <&tog>, <&none>;
+        };
+
+        sym_dance: symbol_tap_dance {
+            compatible = "zmk,behavior-tap-dance";
+            label = "SYMBOL_TAP_DANCE";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&sym_sticky SYMBOL>, <&sym_lock SYMBOL 0>;
+        };
+
+        sym: symbol_hold_tap {
+            compatible = "zmk,behavior-hold-tap";
+            label = "SYMBOL_HOLD_TAP";
+            #binding-cells = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <200>;
+            quick-tap-ms = <175>;
+            bindings = <&mo>, <&sym_dance>;
+        };
     };
 
     conditional_layers {
@@ -111,7 +147,7 @@
                 &none &kp Q        &kp W        &kp E        &kp R        &kp T        &none                                 &none       &kp Y        &kp U        &kp I        &kp O        &kp P        &none
                 &none &hml LGUI A  &hml LALT S  &hml LCTRL D &hml LSHFT F &kp G        &none &none &none &none &none &none &kp H        &hmr RSHFT J &hmr RCTRL K &hmr RALT L  &hmr RGUI SQT &none
                 &none &kp Z        &kp X        &kp C        &kp V        &kp B              &none &none              &kp N        &kp M        &kp COMMA    &kp DOT      &kp FSLH     &none
-                &none &none &none &none &none                &lt NAV SPACE &lt SYMBOL ENTER &none &none &num NUMBER 0 &sht LSHFT LSHFT &none &none &none &none &none
+                &none &none &none &none &none                &lt NAV SPACE &sym SYMBOL 0 &none &none &num NUMBER 0 &sht LSHFT LSHFT &none &none &none &none &none
             >;
         };
 
@@ -133,7 +169,7 @@
                 &none &kp GRAVE &kp LT    &kp LBKT  &kp LBRC  &kp LPAR  &none                                  &none     &kp RPAR  &kp RBRC  &kp RBKT  &kp GT    &kp CARET &none
                 &none &kp EXCL  &kp AT    &kp HASH  &kp DLLR  &kp PRCNT &none &none &none &none &none &none &kp AMPS  &kp MINUS &kp PLUS  &kp EQUAL &kp PIPE  &none
                 &none &kp TILDE &kp BSLH  &kp FSLH  &kp STAR  &kp UNDER       &none &none              &kp QMARK &kp COLON &kp SEMI  &kp SQT   &kp DQT   &none
-                &none &none &none &none &none                &trans       &trans            &none &none &trans          &trans       &none &none           &none        &none &none
+                &none &none &none &none &none                &trans       &to BASE         &none &none &trans          &trans       &none &none           &none        &none &none
             >;
         };
 

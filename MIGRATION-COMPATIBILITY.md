@@ -43,8 +43,9 @@ Build the new layout only from the **Directly Implementable** set first: the 34-
 The implemented layer access model is intentionally combo-free:
 
 - Hold the legacy Space thumb: Navigation; tap it for Space.
-- Hold the legacy Enter thumb: Symbol; tap it for Enter.
+- Tap left inner thumb: one-shot Symbol for the next key; hold it for momentary Symbol; tap then hold for persistent Symbol; press it while persistent Symbol is active to return to Base.
 - Tap right inner thumb: one-shot Number for the next key; hold it for momentary Number; tap then hold for persistent Number; press it while persistent Number is active to return to Base.
+- Enter is on the Navigation layer.
 - Tap right outer thumb: Sticky Shift; hold it for ordinary Shift.
 - Hold Symbol and Number together: Utility, containing F-keys, media, Bluetooth, bootloader, and lighting controls.
 
