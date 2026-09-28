@@ -8,25 +8,11 @@ This is a reference for the active 34 keys in `config/adv360.keymap`. All other 
 
 ## Base
 
-| Left | Keys | Right | Keys |
-| --- | --- | --- | --- |
-| Top | Q W E R T | Top | Y U I O P |
-| Home | GUI/A Alt/S Ctrl/D Shift/F G | Home | H Shift/J Ctrl/K Alt/L GUI/' |
-| Bottom | Z X C V B | Bottom | N M , . / |
-| Thumbs | Space/Nav (65), Symbol (66) | Thumbs | Number (69), Shift (70) |
-
 The mirrored top-inner keys enter bootloader mode directly from Base: position 6 on the left and the original right-side `KP` key (position 7), immediately right of the physical `5` key.
 
 ## Navigation
 
 ![Navigation-layer visual layout](assets/layout-navigation.svg)
-
-| Left | Keys | Right | Keys |
-| --- | --- | --- | --- |
-| Top | - - Shift+Tab Alt+Tab - | Top | - Backspace Enter Delete Page Up |
-| Home | GUI Alt Ctrl Shift - | Home | Left Down Up Right Page Down |
-| Bottom | - - - - - | Bottom | Insert Tab Escape Caps Word - |
-| Thumbs | Trans, Trans | Thumbs | Trans, Cancel |
 
 Hold H for Home, J for Ctrl+End, K for Ctrl+Home, or L for End. Hold U or O for Ctrl+Backspace or Ctrl+Delete.
 
@@ -34,31 +20,10 @@ Hold H for Home, J for Ctrl+End, K for Ctrl+Home, or L for End. Hold U or O for 
 
 ![Symbol-layer visual layout](assets/layout-symbol.svg)
 
-| Left | Keys | Right | Keys |
-| --- | --- | --- | --- |
-| Top | Grave < [ { ( | Top | ) } ] > ^ |
-| Home | ! @ # $ % | Home | & - + = \| |
-| Bottom | ~ \\ / * _ | Bottom | ? : ; ' " |
-| Thumbs | Trans, Base/Cancel | Thumbs | Trans, Trans |
-
 ## Number
 
 ![Number-layer visual layout](assets/layout-number.svg)
 
-| Left | Keys | Right | Keys |
-| --- | --- | --- | --- |
-| Top | Trans 7 8 9 Trans | Top | [ ] / * % |
-| Home | 0 4 5 6 Trans | Home | ( ) - + = |
-| Bottom | Trans 1 2 3 Trans | Bottom | < > , . : |
-| Thumbs | Trans, Trans | Thumbs | Base/Cancel, Trans |
-
 ## Utility
 
 ![Utility-layer visual layout](assets/layout-utility.svg)
-
-| Left | Keys | Right | Keys |
-| --- | --- | --- | --- |
-| Top | F1 F2 F3 F4 F5 | Top | F6 F7 F8 F9 F10 |
-| Home | F11 F12 BT 0 BT 1 BT 2 | Home | BT 3 BT 4 Previous Play/Pause Next |
-| Bottom | Bootloader Clear BT Backlight - Backlight Toggle Backlight + | Bottom | Bootloader Volume - Mute Volume + RGB Toggle |
-| Thumbs | Trans, Trans | Thumbs | Trans, Trans |

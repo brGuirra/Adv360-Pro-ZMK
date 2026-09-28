@@ -20,6 +20,7 @@ Use this repository to customize the keyboard's ZMK configuration directly. Do n
 
 - For every completed layout change, including new features and fixes, commit the source changes and then build both halves locally with `make` without waiting for a separate request. Use `make left` only when the right-side binary is not needed.
 - Commit before building a layout change. This ensures the generated firmware filename and embedded version macro contain the final commit hash.
+- On Apple Silicon, build with a native ARM64 Colima profile to avoid slow QEMU x86 emulation: `colima start arm-native --arch aarch64 --vm-type vz --cpu 4 --memory 4`. Confirm `colima status arm-native` reports `arch: aarch64` and that `docker version` reports an `arm64` server. Keep this separate from any x86_64 Colima profile, because a profile's architecture is immutable. The ZMK build image is multi-architecture and selects its native ARM64 variant automatically.
 - Do not build firmware for changes unrelated to the layout or changes that do not require a firmware artifact. Such commits do not need a corresponding firmware version.
 - Build output is written to `firmware/` as timestamped `.uf2` files.
 - Flash the left and right `.uf2` files to their matching keyboard halves while each is in bootloader mode.
