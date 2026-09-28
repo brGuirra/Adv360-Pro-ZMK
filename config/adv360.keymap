@@ -55,6 +55,16 @@
             bindings = <&kp>, <&sk>;
         };
 
+        nav: navigation_hold_tap {
+            compatible = "zmk,behavior-hold-tap";
+            label = "NAVIGATION_HOLD_TAP";
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <220>;
+            quick-tap-ms = <220>;
+            bindings = <&kp>, <&kp>;
+        };
+
         num_sticky: one_shot_number {
             compatible = "zmk,behavior-sticky-key";
             label = "ONE_SHOT_NUMBER";
@@ -162,8 +172,8 @@
             display-name = "Nav";
             bindings = <
                 &none &none      &none      &none      &none      &none      &none                                  &none      &none      &none      &none      &none      &none      &none
-                &none &none      &none      &none      &none      &none      &none                                  &none      &kp HOME   &kp BSPC   &kp ENTER  &kp DEL    &kp END    &none
-                &none &sk LGUI   &sk LALT   &sk LCTRL  &sk LSHFT  &none      &none &none &none &none &none &none &kp PG_DN  &kp LEFT   &kp DOWN   &kp RIGHT  &kp PG_UP  &none
+                &none &none      &none      &none      &kp LS(TAB) &kp LA(TAB) &none                               &none      &none      &nav LC(BSPC) BSPC &kp ENTER &nav LC(DEL) DEL &kp PG_UP &none
+                &none &sk LGUI   &sk LALT   &sk LCTRL  &sk LSHFT  &none      &none &none &none &none &none &none &nav HOME LEFT &nav LC(END) DOWN &nav LC(HOME) UP &nav END RIGHT &kp PG_DN &none
                 &none &none      &none      &none      &none      &none             &none &none              &kp INS    &kp TAB    &kp ESC    &caps_word &none      &none
                 &none &none &none &none &none                &trans        &trans            &none &none &trans           &cancel_all  &none &none            &none        &none &none
             >;
